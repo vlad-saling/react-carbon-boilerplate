@@ -1,0 +1,203 @@
+.dashboard {
+  margin-top: 4rem;
+  padding: 0 2rem;
+  text-align: left;
+}
+
+.dashboardContent {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.widget {
+  background-color: var(--cds-field);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  > h2 {
+    margin-bottom: 1rem;
+  }
+
+  > h3 {
+    color: var(--dark-green);
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+    &:last-of-type {
+      margin-bottom: 3rem;
+    }
+  }
+
+  > h3 > span {
+    font-size: 0.5em;
+    font-weight: normal;
+    color: var(--cds-primary-text-color);
+  }
+
+  .actionButtons {
+    margin-top: auto;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+
+    > * {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.positionForm {
+  input,
+  textarea,
+  div[class*=cds--dropdown__wrapper] {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.timeline {
+  //take up all grid space
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+  border: 1px solid var(--cds-field);
+  padding: 1rem;
+
+  .chart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    .chartHeader {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.75rem;
+      text-align: center;
+    }
+
+    .jobBlock {
+        background-color: var(--cds-field);
+        border: 1px solid var(--cds-field);
+        padding: 0.5rem;
+        margin: 0.5rem;
+        text-align: center;
+        font-size: 0.75rem;
+        font-weight: bold;
+        color: var(--cds-primary-text-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            background-color: var(--cds-field-hover);
+            border: 1px solid var(--cds-field-hover);
+        }
+
+        &.selected {
+            background-color: var(--cds-field-active);
+            border: 1px solid var(--cds-field-active);
+        }
+    }
+
+    .blockStartJAN {
+      grid-column-start: 1;
+    }
+
+    .blockStartFEB {
+      grid-column-start: 2;
+    }
+
+    .blockStartMAR {
+      grid-column-start: 3;
+    }
+
+    .blockStartAPR {
+      grid-column-start: 4;
+    }
+
+    .blockStartMAY {
+      grid-column-start: 5;
+    }
+
+    .blockStartJUN {
+      grid-column-start: 6;
+    }
+
+    .blockStartJUL {
+      grid-column-start: 7;
+    }
+
+    .blockStartAUG {
+      grid-column-start: 8;
+    }
+
+    .blockStartSEP {
+      grid-column-start: 9;
+    }
+
+    .blockStartOCT {
+      grid-column-start: 10;
+    }
+
+    .blockStartNOV {
+      grid-column-start: 11;
+    }
+
+    .blockStartDEC {
+      grid-column-start: 12;
+    }
+
+    .blockEndJAN {
+      grid-column-end: 2;
+    }
+
+    .blockEndFEB {
+      grid-column-end: 3;
+    }
+
+    .blockEndMAR {
+      grid-column-end: 4;
+    }
+
+    .blockEndAPR {
+      grid-column-end: 5;
+    }
+
+    .blockEndMAY {
+      grid-column-end: 6;
+    }
+
+    .blockEndJUN {
+      grid-column-end: 7;
+    }
+
+    .blockEndJUL {
+      grid-column-end: 8;
+    }
+
+    .blockEndAUG {
+      grid-column-end: 9;
+    }
+
+    .blockEndSEP {
+      grid-column-end: 10;
+    }
+
+    .blockEndOCT {
+      grid-column-end: 11;
+    }
+
+    .blockEndNOV {
+      grid-column-end: 12;
+    }
+
+    .blockEndDEC {
+      grid-column-end: 13;
+    }
+
+
+  }
+}
